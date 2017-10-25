@@ -1,0 +1,18 @@
+#!
+
+sudo snap install nextcloud
+
+
+# encrypt
+nextcloud.occ encryption:enable
+nextcloud.occ maintenance:mode --on
+nextcloud.occ encryption:encrypt-all
+#nextcloud.occ encryption:decrypt-all
+
+nextcloud.occ maintenance:mode --off
+
+
+
+
+
+# https://docs.nextcloud.com/server/12/admin_manual/configuration_files/encryption_configuration.html#occ-encryption-label
