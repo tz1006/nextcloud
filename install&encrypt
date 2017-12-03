@@ -2,6 +2,8 @@
 
 sudo snap install nextcloud
 
+# 扫描所有文件
+nextcloud.occ files:scan --all
 
 # encrypt
 nextcloud.occ encryption:enable
